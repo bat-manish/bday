@@ -7,9 +7,14 @@ body {
 }
 
 h4 {
-	font-size: 26px;
+	font-size: 20px;
 	line-height: 1px;
-	font-family: 'Leckerli One', cursive; 
+    font-family: 'Leckerli One', cursive; 
+    padding: 0 0 30px 0px;
+}
+
+p{
+    padding: 3px;
 }
 
 .color1{color:darkblue}/*MOUNTAIN MEADOW*/
@@ -83,7 +88,7 @@ h4 {
 	top: 0;
 	left: 42px;
 	box-sizing: border-box;
-	padding: 0 0 0 10px;
+	/* padding: 0 0 0 10px; */
 	z-index: -1;
 	margin-top: 44px;
 }
@@ -92,7 +97,7 @@ h4 {
 	font-size: 15px;
 	line-height: 5px;
 	transform: rotate(-10deg);
-	padding: 0 0 0 20px;
+	padding: 0 10px 0 10px;
 }
 
 .black {
