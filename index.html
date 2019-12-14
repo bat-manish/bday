@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="author" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Leckerli+One&display=swap" rel="stylesheet">    <div class="black"></div>
+    <link href="https://fonts.googleapis.com/css?family=Ruge+Boogie&display=swap" rel="stylesheet"><div class="cards">
+            <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Ruge+Boogie&display=swap" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Grand+Hotel|Leckerli+One|Ruge+Boogie&display=swap" rel="stylesheet">
+        <div class="card" id = "first" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/2.png">
+            </div>
+            <div class="details">
+                <h4 class="color1">Happy Birthday!!!</h2>
+                        <p>Wonder Woman,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">With Love and Kisses!!!😙</p>
+                        <p class="text-right">♥Manish</p>
+            </div>
+        </div>
+
+        <div class="card" id = "second" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/1.png">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">Happy Anniversary!!!</h3>
+                        <p>Jaan,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">Unconditionally Yours.</p>
+                        <p class="text-right">♥Manish</p>
+            </div>
+        </div>
+
+        <div class="card" id = "third" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/4.png">
+            </div>
+            <div class="details">
+                <h4 class="color1">Happy Birthday!!!</h2>
+                        <p>Littil,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">Yours and only yours</p>
+                        <p class="text-right">♥Manish</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="cards">
+        <div class="card " id = "fourth" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/3.png">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">Happy Anniversary!!!</h3>
+                        <p>Jaan,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">Yours always...</p>
+                        <p class="text-right">♥Manish</p>
+            </div>
+        </div>
+
+        <div class="card " id = "fifth" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/5.png">
+            </div>
+            <div class="details">
+                <h4 class="color1">Happy Birthday!!!</h2>
+                        <p>Littil,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">Yours till Infinity and beyond!</p>
+                        <p class="text-right">♥Manish</p>
+            </div>
+        </div>
+
+        <div class="card " id = "sixth" onclick="myFunction(this)">
+            <div class="imgBox">
+                <div class="bark"></div>
+                <img src="res/6.png">
+            </div>
+            <div class="details">
+                <h4 class="color2 margin">Happy Anniversary!!!</h3>
+                        <p>Sarmista,</p>
+                        <p>.............</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p>....................</p>
+                        <p class="text-right">With Love and Lust!</p>
+                        <p class="text-right">Manish🤗</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function myFunction(e){
+        console.log(e);
+        var cards = document.querySelectorAll('.card');
+        Array.prototype.forEach.call(cards,function(element,index){
+            if (element.id != e.id){ 
+                element.classList.remove("move");
+            }
+        })
+        
+        document.querySelector('.black').classList.toggle('dim');
+
+        e.classList.toggle("move");
+    }
+    </script>
+</body>
+
+</html>

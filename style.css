@@ -1,0 +1,186 @@
+body {
+	font-family: 'Leckerli One', cursive;
+    background: turquoise; /*CAPE HONEY*/
+	margin: 0px;
+    padding: 0px;
+
+}
+
+h4 {
+	font-size: 26px;
+	line-height: 1px;
+	font-family: 'Leckerli One', cursive; 
+}
+
+.color1{color:darkblue}/*MOUNTAIN MEADOW*/
+.color2{color:#C0392B/*TALL POPPY*/}
+
+
+.cards {
+    /* margin: 5%; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+ }
+
+.card {
+	color: #013243; /*SHERPA BLUE*/
+	height: 400px;
+	background: #e0e1dc;
+	transform-style: preserve-3d;
+	transform:  scale(.8);
+	box-shadow: inset 300px 0 50px rgba(0,0,0,.5), 20px 0 60px rgba(0,0,0,.5);
+    transition: 1s;
+}
+
+.move {
+    /* position: absolute; */
+    top:50%;
+    left: 50%;
+    transform: perspective(2000px) rotate(-15deg) scale(1);
+    box-shadow: inset 20px 0 50px rgba(0,0,0,.5), 0 10px 100px rgba(0,0,0,.5);
+    z-index:2;
+}
+
+
+ .card .imgBox {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	transform-origin: left;
+	transition: .7s;
+}
+
+.card .bark {
+	position: absolute;
+	background: #e0e1dc;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: .7s;
+}
+
+
+.card .imgBox img {
+	min-width: 250px;
+	max-height: 400px;
+}
+
+.card.move .imgBox {
+	transform: rotateY(-135deg);
+}
+
+.card.move .bark {
+	opacity: 1;
+	transition: .6s;
+    box-shadow: 300px 200px 100px rgba(0, 0, 0, .4) inset;
+}
+
+.card .details {
+	position: absolute;
+	top: 0;
+	left: 42px;
+	box-sizing: border-box;
+	padding: 0 0 0 10px;
+	z-index: -1;
+	margin-top: 44px;
+}
+
+.card .details p {
+	font-size: 15px;
+	line-height: 5px;
+	transform: rotate(-10deg);
+	padding: 0 0 0 20px;
+}
+
+.black {
+    opacity: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    transition: opacity 1s;
+    background-color: black;
+}
+.dim{
+    opacity: .4;
+    z-index: 1;
+}
+
+.card .details h4 {
+	text-align: center;
+}
+
+/* :not(move){
+    filter:blur(2px);
+} */
+
+
+
+.text-right {
+	text-align: right;
+} 
+
+@media only screen and (min-width: 617px) {
+    
+    body{
+        background-color: #013243;
+    }
+
+    #first.move{
+        transform: translate(30%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #second.move{
+        transform: translate(-30%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #third.move{
+        transform: translate(0%,0%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #fourth.move{
+        transform: translate(30%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    #fifth.move{
+        transform: translate(-30%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    #sixth.move{
+        transform: translate(0%,0%) perspective(2000px) rotate(-15deg) scale(1.3);
+    } 
+    
+}
+
+@media only screen and (min-width: 918px)  {
+
+    body{
+        background-color: #C0392B;
+    }
+    
+    #first.move{
+        transform: translate(50%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #second.move{
+        transform: translate(0%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #third.move{
+        transform: translate(-50%,50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    
+    #fourth.move{
+        transform: translate(50%,-50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    #fifth.move{
+        transform: translate(0%,-50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    }
+    #sixth.move{
+        transform: translate(-50%,-50%) perspective(2000px) rotate(-15deg) scale(1.3);
+    } 
+    
+}
+
+
